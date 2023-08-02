@@ -1,5 +1,8 @@
 "use client";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import AllCoins from "../AllCoins";
+
+import data from "../../../public/data.json";
 
 const Home = () => {
   return (
@@ -9,15 +12,15 @@ const Home = () => {
           Track latest Cryptocurrencies by Market Cap
         </h1>
       </div>
-      <Tabs>
+      <Tabs className="my-4">
         <TabList>
           <Tab>Cryptocurrencies</Tab>
           <Tab>Watchlist</Tab>
         </TabList>
 
-        <TabPanels>
+        <TabPanels className="w-full">
           <TabPanel>
-            <p>one!</p>
+            <AllCoins crypto={data} />
           </TabPanel>
           <TabPanel>
             <p>two!</p>
