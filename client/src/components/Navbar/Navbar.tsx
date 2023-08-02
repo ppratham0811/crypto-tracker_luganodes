@@ -16,7 +16,7 @@ const Navbar = () => {
       <Box className="relative top-0 flex items-center justify-between px-8 py-4 bg-primary text-white border-b-1 border-solid border-white">
         <div className="flex items-center justify-center gap-2">
           <Image src="/logo-main.png" width={40} height={40} alt="Logo" />
-          <p className="text-xl font-bold">Crypt.io</p>
+          <a href="/" className="text-xl font-bold">Crypt.io</a>
         </div>
         <div className="lg:block hidden">
           <SearchBar />

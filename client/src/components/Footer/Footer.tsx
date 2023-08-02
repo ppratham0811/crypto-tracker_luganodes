@@ -10,24 +10,19 @@ const Footer = () => {
             <div className="grid grid-cols-12 gap-2">
               <div className="col-span-12 sm:col-span-6 lg:col-span-4">
                 <div className="py-3">
-                  <Image height={50} width={50} src="/logo-main.png" alt="footer-logo" />
+                  <Image
+                    height={50}
+                    width={50}
+                    src="/logo-main.png"
+                    alt="footer-logo"
+                  />
                 </div>
                 <div>
                   <div className="flex items-center py-2">
                     <i className="bi bi-envelope-fill flex text-xl text-primary-color"></i>
-                    <a className="break-all" href="#">
+                    <a className="break-all" href="/">
                       Crypt.io
                     </a>
-                  </div>
-                  <div className="flex items-center py-2">
-                    <i className="bi bi-telephone-fill flex text-xl text-primary-color"></i>
-                    <a className="break-all" href="#">
-                      0101-010101
-                    </a>
-                  </div>
-                  <div className="flex items-center py-2">
-                    <i className="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
-                    <span className="break-all">Dubai</span>
                   </div>
                 </div>
               </div>
@@ -52,7 +47,7 @@ const Footer = () => {
                         href="#"
                         className="transition-all-300 group-hover:text-white"
                       >
-                        New products
+                        Buy Crypto
                       </a>
                     </li>
                     <li className="group relative flex items-center hover:text-primary-color">
@@ -61,16 +56,7 @@ const Footer = () => {
                         href="#"
                         className="transition-all-300 group-hover:text-white"
                       >
-                        Best sales
-                      </a>
-                    </li>
-                    <li className="group relative flex items-center hover:text-primary-color">
-                      <i className="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
-                      <a
-                        href="#"
-                        className="transition-all-300 group-hover:text-white"
-                      >
-                        Secure payment
+                        Track Crypto
                       </a>
                     </li>
                     <li className="group relative flex items-center hover:text-primary-color">
@@ -82,24 +68,7 @@ const Footer = () => {
                         Services
                       </a>
                     </li>
-                    <li className="group relative flex items-center hover:text-primary-color">
-                      <i className="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
-                      <a
-                        href="#"
-                        className="transition-all-300 group-hover:text-white"
-                      >
-                        Delivery
-                      </a>
-                    </li>
-                    <li className="group relative flex items-center hover:text-primary-color">
-                      <i className="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
-                      <a
-                        href="#"
-                        className="transition-all-300 group-hover:text-white"
-                      >
-                        Legal Notice
-                      </a>
-                    </li>
+
                     <li className="group relative flex items-center hover:text-primary-color">
                       <i className="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
                       <a
@@ -118,15 +87,6 @@ const Footer = () => {
                         Contact us
                       </a>
                     </li>
-                    <li className="group relative flex items-center hover:text-primary-color">
-                      <i className="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
-                      <a
-                        href="#"
-                        className="transition-all-300 group-hover:text-white"
-                      >
-                        Stores
-                      </a>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -140,48 +100,18 @@ const Footer = () => {
                 <form className="py-2">
                   <div className="flex overflow-hidden rounded-lg bg-gray-800 p-2">
                     <input
-                      className="w-full border-none bg-transparent pl-2 focus:border-none focus:ring-0 focus:ring-transparent"
+                      className="w-full border-none bg-transparent pl-2 focus:border-none focus:outline-none"
                       type="text"
                       placeholder="Your email address"
                     />
-                    {/* <button className="p-1" type="submit">
-                  </button> */}
+                    <button
+                      className="p-2 rounded-lg bg-gold text-white"
+                      type="submit"
+                    >
+                      Subscribe
+                    </button>
                   </div>
                 </form>
-                <div className="flex gap-2 py-2">
-                  <div className="relative h-8 w-8 overflow-hidden rounded-full">
-                    <a
-                      className="instagram-before flex h-8 w-8 items-center justify-center bg-gray-rgba text-center text-white"
-                      href="#"
-                    >
-                      <i className="bi bi-instagram relative z-[2] flex"></i>
-                    </a>
-                  </div>
-                  <div className="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-facebook">
-                    <a
-                      className="flex h-8 w-8 items-center justify-center"
-                      href="#"
-                    >
-                      <i className="bi bi-facebook flex text-white"></i>
-                    </a>
-                  </div>
-                  <div className="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-twitter">
-                    <a
-                      className="flex h-8 w-8 items-center justify-center"
-                      href="#"
-                    >
-                      <i className="bi bi-twitter flex text-white"></i>
-                    </a>
-                  </div>
-                  <div className="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-youtube">
-                    <a
-                      className="flex h-8 w-8 items-center justify-center"
-                      href="#"
-                    >
-                      <i className="bi bi-youtube flex text-white"></i>
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

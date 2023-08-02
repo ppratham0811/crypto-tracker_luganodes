@@ -1,10 +1,9 @@
 "use client";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import AllCoins from "../AllCoins";
+import { useState, useEffect } from "react";
 
-import data from "../../../public/data.json";
-
-const Home = () => {
+const Main = () => {
   return (
     <>
       <div>
@@ -20,10 +19,10 @@ const Home = () => {
 
         <TabPanels className="w-full">
           <TabPanel>
-            <AllCoins crypto={data} />
+            <AllCoins />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <p>Your Watchlist</p>
           </TabPanel>
         </TabPanels>
       </Tabs>
@@ -31,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Main;
